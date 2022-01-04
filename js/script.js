@@ -21,10 +21,53 @@ function num () {
                 result = `${result} ${i}; `
             }
              }
-             alert (result);
-            
+             alert (result);     
     }
+}
+function numberOfnumbers () {
+    let num = prompt ('Input your number'); 
+    if (num<0) {
+        alert (`amount number  ${num.length-1}`)
+    } else {
+        alert (`amount number  ${num.length}`);
+    }
+}
 
+function statistics () {
+    let num;
+    let positive = 0 ;
+    let negative = 0;
+    let nUll = 0;
+    let result = '';
+for (let i = 1; i<=10; i++) {
+     num = +prompt ('Input your number');
+     if (num === 0) {
+nUll+=1;
+     } else if (num>0){
+         positive+=1;
+     } else if (num<0) {
+         negative+=1;
+     }
+}
+alert (`Your result positive - ${positive}
+negative - ${negative}
+null - ${nUll}`)
+}
+
+function calculator () {
+    
 
 }
 
+
+
+function multiplicationTable () {
+    let result = '';
+    for (let i = 2; i<=9; i++) {
+        for (let j = 1; j<=10; j++) {
+            result = `${i} x ${j} = ${i*j}`;
+            console.log (result);
+        }
+        console.log('');
+    }
+}
