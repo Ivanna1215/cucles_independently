@@ -37,14 +37,15 @@ function numberOfnumbers () {
 function nSD () {
     let a = +prompt ('Input your first num');
     let b = +prompt ('Input your  second num');
-  while (a>b || a<b){
+  while (b>0){
         if (a>b) {
-            a = a-b;
+           console.log (a = a-b);
         } else  {
-            b = b-a;
+            console.log (b = b-a);
         }
     }
-    alert ('Your result',a );
+    alert (`NSD ${a}`);
+    
 }
 
 
