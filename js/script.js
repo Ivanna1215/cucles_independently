@@ -3,11 +3,11 @@ function amountNumber() {
     let i = +prompt('Input your OneNum');
     let j = +prompt('Input your twoNUm');
     let result = 0;
+    i++;
 for (i;i<j;i++) {
     result = result + i;
 }
 alert (`Your result is ${result}`);
-
 }
 
 function num () {
@@ -33,6 +33,21 @@ function numberOfnumbers () {
     }
 }
 
+
+function nSD () {
+    let a = +prompt ('Input your first num');
+    let b = +prompt ('Input your  second num');
+  while (a>b || a<b){
+        if (a>b) {
+            a = a-b;
+        } else  {
+            b = b-a;
+        }
+    }
+    alert ('Your result',a );
+}
+
+
 function statistics () {
     let num;
     let positive = 0 ;
@@ -54,11 +69,6 @@ negative - ${negative}
 null - ${nUll}`)
 }
 
-function calculator () {
-    
-
-}
-
 
 
 function multiplicationTable () {
@@ -71,3 +81,4 @@ function multiplicationTable () {
         console.log('');
     }
 }
+
