@@ -45,6 +45,7 @@ function nSD () {
         }
     }
     alert (`NSD ${a}`);
+    console.log ('NSD',a);
     
 }
 
@@ -70,16 +71,40 @@ negative - ${negative}
 null - ${nUll}`)
 }
 
-
-
-function multiplicationTable () {
+function multiplicationTable() {
     let result = '';
     for (let i = 2; i<=9; i++) {
-        for (let j = 1; j<=10; j++) {
-            result = `${i} x ${j} = ${i*j}`;
+        for (let j=1; j<=9; j++){
+            result = i +"x"+ j + '='+ i*j;
             console.log (result);
         }
-        console.log('');
+        console.log ('');
     }
-}
 
+}
+ function calculator () {
+     let yes;
+     let result;
+     let a;
+     let b;
+     let operator;
+     do {
+        a = +prompt ('Input your first num');
+        b = +prompt ('Input your  second num');
+        operator = prompt('Input your operator: + ; - ; * ; /;');
+        switch (operator) {
+            case '+':
+                result = a + b;
+                console.log (result);
+                break;
+                default:
+                    console.log ('Error');
+        }
+        yes = confirm ("Continue?")
+    }
+while (yes) 
+
+     }
+
+   
+   
