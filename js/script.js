@@ -88,84 +88,80 @@ function calculator() {
     let c;
     // let result;
     let yes;
-  
+
     do {
         a = prompt('Input your oneNum');
-            b = +prompt('Input your twoNum');
-            c = prompt('Input your operator:+;-;*;/');
-            switch (c) {
-                case '+':
-                    // result = a + b;
-                    alert(a+b);
-                    break;
-                    case '-':
-                        // result = a - b;
-                        alert (a-b);
-                        break;
-                        case '*':
-                            alert (a*b);
-                            break;
-                            case'/':
-                            alert (a/b);
-                            break;
-                default:
-                    alert('Error')
-            }
-            yes = confirm('Continue?')
+        b = +prompt('Input your twoNum');
+        c = prompt('Input your operator:+;-;*;/');
+        switch (c) {
+            case '+':
+                // result = a + b;
+                alert(a + b);
+                break;
+            case '-':
+                // result = a - b;
+                alert(a - b);
+                break;
+            case '*':
+                alert(a * b);
+                break;
+            case '/':
+                alert(a / b);
+                break;
+            default:
+                alert('Error')
         }
-        while (yes);
+        yes = confirm('Continue?')
     }
+    while (yes);
+}
 
-    function moveNumbers () {
-        let a = prompt ('Input your number');
-        if (a>=0){
-            let b = prompt ('Input your amount');
-            // console.log (a.length);
-            let part_2 = a.slice (0,b);
-            let part_1 = a.slice (b);
-            console.log (part_1);
-            console.log (part_2);
-            let part = part_1+part_2;
-           alert (part);
-        } else {
-            alert ('The code is incorrect');
-        }
-       
+function moveNumbers() {
+    let a = prompt('Input your number');
+    if (a >= 0) {
+        let b = prompt('Input your amount');
+        // console.log (a.length);
+        let part_2 = a.slice(0, b);
+        let part_1 = a.slice(b);
+        console.log(part_1);
+        console.log(part_2);
+        let part = part_1 + part_2;
+        alert(part);
+    } else {
+        alert('The code is incorrect');
     }
-
-    function learnCycleTask3 () {
-       for (let i=2;i<=10;i++){
-           if(i%2===0){
-               console.log (i);
-           }
-       }
-    }
-
-    for (let i = 0; i < 3; i++) {
-        console.log( `number ${i}!` );
-      }
-
-      let i=0;
-      while (i<3){
-        console.log( `number ${i}!` );
-        i++;
-      }
-
-      function repeatCycle() {
-
-for (let i=1; i<=100;) {
-    i = prompt('Input a number greater than 100');
-    if (i.length===0) {
-        alert ('N2 Good luck')
-     }  
-     else if ( i>100) {
-         alert ('Good luck')
-     } else if ( i<=100) {
-         i = +prompt('Input a number greater than 100');
-     } 
 
 }
 
+function learnCycleTask3() {
+    for (let i = 2; i <= 10; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+}
 
+for (let i = 0; i < 3; i++) {
+    console.log(`number ${i}!`);
+}
 
+let i = 0;
+while (i < 3) {
+    console.log(`number ${i}!`);
+    i++;
+}
+
+function repeatCycle() {
+    let num;
+      do {
+        num = prompt("Input a number greater than 100");
+      } while (num <= 100 && num);
+      }
+    
+      function primes () {
+          for (let i = 2; i<=10; i++) {
+              if (i % 2 >=1) {
+                console.log (i);
+              }
+          }
       }
