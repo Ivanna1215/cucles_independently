@@ -132,3 +132,40 @@ function calculator() {
         }
        
     }
+
+    function learnCycleTask3 () {
+       for (let i=2;i<=10;i++){
+           if(i%2===0){
+               console.log (i);
+           }
+       }
+    }
+
+    for (let i = 0; i < 3; i++) {
+        console.log( `number ${i}!` );
+      }
+
+      let i=0;
+      while (i<3){
+        console.log( `number ${i}!` );
+        i++;
+      }
+
+      function repeatCycle() {
+
+for (let i=1; i<=100;) {
+    i = prompt('Input a number greater than 100');
+    if (i.length===0) {
+        alert ('N2 Good luck')
+     }  
+     else if ( i>100) {
+         alert ('Good luck')
+     } else if ( i<=100) {
+         i = +prompt('Input a number greater than 100');
+     } 
+
+}
+
+
+
+      }
